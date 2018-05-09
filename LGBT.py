@@ -3,7 +3,7 @@ import tweepy,sys
 import csv
 import pandas as pd
 import matplotlib.pyplot as plt
-####input your credentials here
+
 consumer_key = 'GdK7gzRCu28DqB2D0flGubF00'
 consumer_secret = 'JWpOhvEFE4RX1DyJoB3cZMnxlweWaxMhyqVqeivF3LK9x7H0wb'
 access_token = '928950395854114818-26BORYbxdcULEXUxhlOkQ87NwusfPCx'
@@ -12,8 +12,7 @@ access_token_secret = '7F5AIeAUtdcUlyoMstaSsNdOJb8wNCuHmWNhYNQTffy5A'
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth,wait_on_rate_limit=True)
-#####United Airlines
-# Open/Create a file to append data
+
 csvFile = open('lgbt.csv', 'a')
 #Use csv Writer
 csvWriter = csv.writer(csvFile)
